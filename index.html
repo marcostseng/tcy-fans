@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>曾建穎 資料彙整</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;900&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#111110;--bg2:#161614;--line:#2A2824;--line2:#3A3731;--btn:#4A463F;--text:#ECE7DD;--soft:#CFC8BB;--mute:#A8A196;--accent:#D4B06A;--serif:'Noto Serif TC',serif;--sans:'Noto Sans TC',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);font-size:16px;line-height:1.7;padding-bottom:env(safe-area-inset-bottom,0px)}
+a{color:var(--accent)}a:hover{color:#EBD3A0}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+@media (max-width:600px){.wrap{padding:0 20px}}
+header{position:sticky;top:0;z-index:5;background:rgba(17,17,16,.94);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding-top:14px;padding-bottom:14px}
+.logo{color:var(--text);text-decoration:none;font-family:var(--serif);font-weight:600;font-size:20px;letter-spacing:.12em}
+.logo small{font-family:var(--sans);font-weight:400;font-size:13px;letter-spacing:.2em;color:var(--mute);margin-left:6px}
+nav{display:flex;flex-wrap:wrap;gap:0 22px;font-size:14px;letter-spacing:.1em}
+nav a{color:var(--soft);text-decoration:none;padding:8px 0}
+section{border-top:1px solid var(--line)}
+section.alt{background:var(--bg2)}
+.pad{padding-top:88px;padding-bottom:88px}
+@media (max-width:600px){.pad{padding-top:56px;padding-bottom:56px}}
+.head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:36px}
+h2{margin:0;font-family:var(--serif);font-size:clamp(28px,4vw,40px);font-weight:600;letter-spacing:.08em}
+.en{font-size:13px;letter-spacing:.25em;color:var(--mute)}
+h3{margin:0;font-family:var(--serif);font-weight:600}
+.lead{margin:0 0 28px;max-width:680px;color:var(--soft)}
+.hero{display:flex;flex-wrap:wrap;gap:56px;align-items:center;padding-top:88px;padding-bottom:80px}
+.hero .txt{flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:22px}
+.hero h1{margin:0;font-family:var(--serif);font-weight:900;font-size:clamp(56px,9vw,112px);line-height:1.05;letter-spacing:.04em}
+.hero p{margin:0;max-width:520px;font-size:18px;color:var(--soft)}
+.kicker{font-size:13px;letter-spacing:.3em;color:var(--accent)}
+.hero figure{flex:1 1 380px;min-width:0;margin:0}
+.hero img{width:100%;aspect-ratio:4/5;object-fit:contain;background:#1A1917;border:1px solid var(--line2);display:block}
+figcaption{font-size:13px;color:var(--mute);margin-top:10px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 26px;text-decoration:none;letter-spacing:.1em;border:1px solid var(--btn);color:var(--text);background:transparent;font:inherit;font-size:15px;cursor:pointer}
+.btn.solid{background:var(--accent);border-color:var(--accent);color:#111110;font-weight:700}
+.chip{min-height:44px;padding:0 18px;border:1px solid var(--btn);background:transparent;color:var(--text);font:inherit;font-size:14px;cursor:pointer}
+.chip[aria-pressed="true"],.chip[aria-selected="true"]{background:var(--accent);border-color:var(--accent);color:#111110;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.news article{display:grid;grid-template-columns:220px 1fr;gap:6px 40px;padding:26px 0;border-top:1px solid var(--line)}
+@media (max-width:700px){.news article{grid-template-columns:1fr}}
+.date{color:var(--accent);font-size:14px;letter-spacing:.08em}
+.tag{display:block;font-size:13px;color:var(--mute)}
+.news h3{font-size:21px;margin-bottom:4px}
+.news p{margin:0;color:var(--soft)}
+.series{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px}
+.series a{text-decoration:none;color:var(--text);display:flex;flex-direction:column;gap:10px}
+.series img{width:100%;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--line2);display:block}
+.series .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.series .row h3{font-size:20px}
+.series span{font-size:14px;color:var(--soft)}
+.videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.videos a{display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--text);padding:24px;border:1px solid var(--line2);background:#171715;min-height:150px}
+.videos .src{font-size:13px;color:var(--mute)}
+.videos h3{font-size:19px;line-height:1.5}
+.videos .go{margin-top:auto;font-size:14px;color:var(--accent)}
+.reads a{display:flex;flex-wrap:wrap;gap:4px 20px;padding:14px 0;border-top:1px solid var(--line);text-decoration:none;color:var(--text)}
+.reads .src{flex:0 0 180px;font-size:13px;color:var(--mute)}
+.reads span:last-child{flex:1 1 300px;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:40px 28px}
+.work{display:flex;flex-direction:column;gap:8px;margin:0}
+.work button{padding:0;border:0;background:none;cursor:zoom-in}
+.work img{width:100%;aspect-ratio:4/5;object-fit:contain;background:#1F1E1B;border:1px solid var(--line2);display:block}
+.work .row{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.work h3{font-size:18px;line-height:1.4}
+.work .yr{font-size:13px;color:var(--mute);flex:none}
+.work .spec{font-size:14px;color:var(--soft)}
+.work .price{font-size:15px;font-weight:700;color:var(--accent);padding-top:8px;border-top:1px solid var(--line)}
+.count{font-size:14px;color:var(--mute);margin:-16px 0 24px}
+.about{display:flex;flex-wrap:wrap;gap:56px}
+.about>div{flex:1 1 380px;min-width:0}
+.about p{color:var(--soft)}
+.cv div{display:flex;gap:24px;padding:13px 0;border-top:1px solid var(--line);font-size:15px;color:var(--soft)}
+.cv b{flex:0 0 56px;color:var(--accent);font-weight:400;font-size:14px}
+footer{border-top:1px solid var(--line);background:#0C0C0B}
+footer .wrap{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between;padding-top:64px;padding-bottom:40px}
+footer .col{flex:1 1 300px;display:flex;flex-direction:column;gap:8px;color:var(--soft);font-size:15px}
+footer h2{font-size:28px;margin-bottom:6px}
+.note{text-align:center;font-size:13px;color:#8C867C;padding:0 20px 40px}
+dialog{border:0;padding:0;background:transparent;max-width:min(96vw,1100px);max-height:94vh;color:var(--text)}
+dialog::backdrop{background:rgba(0,0,0,.88)}
+dialog img{max-width:100%;max-height:82vh;display:block;margin:0 auto}
+dialog p{text-align:center;margin:12px 0 0;font-size:15px}
+dialog .close{position:fixed;top:calc(env(safe-area-inset-top,0px) + 12px);right:16px;width:48px;height:48px;border:1px solid var(--btn);background:#111110;color:var(--text);font-size:22px;cursor:pointer}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="logo" href="#top">曾建穎<small>資料彙整</small></a>
+<nav aria-label="主選單">
+<a href="#news">近況</a><a href="#works">作品</a><a href="#media">影音</a><a href="#about">簡歷</a><a href="#sources">來源</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<div class="wrap hero">
+<div class="txt">
+<span class="kicker">水墨、膠彩、陶瓷雕塑</span>
+<h1>曾建穎</h1>
+<p>1987 年生於南投，現居台北。本頁彙整其展覽、作品、訪談與公開資訊，來源附於頁尾。</p>
+<div class="btns"><a class="btn solid" href="#works">看作品</a><a class="btn" href="#media">影音訪談</a></div>
+</div>
+<figure><img src="img/065.jpg" alt="曾建穎《啞謎 Oracle》2025"><figcaption>《啞謎 Oracle》2025，紙本設色、墨、礦物顏料，163×125 cm</figcaption></figure>
+</div>
+
+<section id="news"><div class="wrap pad news">
+<div class="head"><h2>近況</h2><span class="en">NEWS</span></div>
+<div id="newsList"></div>
+</div></section>
+
+<section id="works" class="alt"><div class="wrap pad">
+<div class="head"><h2>作品</h2><span class="en">WORKS</span></div>
+<p class="lead">資料整理自藝術家官網，點圖可放大。</p>
+<div class="chips" id="filters" aria-label="依類別篩選"></div>
+<p class="count" id="count" aria-live="polite"></p>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="media"><div class="wrap pad">
+<div class="head"><h2>影音訪談</h2><span class="en">VIDEO &amp; PODCAST</span></div>
+<div class="videos" id="videos"></div>
+<div class="btns" style="margin-top:20px"><a class="btn" href="https://www.google.com/search?udm=vids&amp;q=tseng+chien+ying" target="_blank" rel="noopener">搜尋更多相關影片</a></div>
+<h3 style="font-size:22px;margin:56px 0 12px">文字專訪與報導</h3>
+<div class="reads" id="reads"></div>
+</div></section>
+
+<section id="about" class="alt"><div class="wrap pad about">
+<div>
+<h2>簡歷</h2>
+<p>2009 年畢業於國立臺灣師範大學美術學系水墨組，2013 年取得國立臺北藝術大學美術創作碩士。創作以水墨膠彩與陶瓷雕塑為主，融合東方古典媒材與當代視覺語彙，透過感官經驗探討身體、精神性與社會處境之間的張力。</p>
+</div>
+<div class="cv" id="cv"></div>
+</div></section>
+</main>
+
+<footer id="sources">
+<div class="wrap">
+<div class="col">
+<h2>資料來源</h2>
+<a href="https://www.tsengchienying.com/" target="_blank" rel="noopener">藝術家官網 tsengchienying.com</a>
+<a href="https://www.instagram.com/tsengchienying/" target="_blank" rel="noopener">Instagram @tsengchienying</a>
+</div>
+<div class="col">
+<span class="en" style="letter-spacing:.15em">代理與合作畫廊</span>
+<span>馬凌畫廊 Kiang Malingue（香港）</span>
+<span>亞紀畫廊 Each Modern（台北）</span>
+<span>赤粒藝術 Red Gold Fine Art（台北）</span>
+</div>
+</div>
+<p class="note">個人整理，非官方網站。作品圖像與著作權歸藝術家及畫廊所有。</p>
+</footer>
+
+<dialog id="viewer" aria-label="作品大圖">
+<button class="close" type="button" aria-label="關閉">×</button>
+<img alt=""><p></p>
+</dialog>
+
+<script src="data.js"></script>
+<script>
+const NEWS = [
+ ['2026.10.24 – 2027.01.23','雙人展・台北・展出中','「露水幻夢 Liquid Dream」與班傑明・斯皮爾斯','TAO ART 雙人展，展出桃形屏風《仙果》與《身體角質：半夏》、《身體角質：忍冬》。'],
+ ['2026','駐村・紐約','99 Canal 藝術家駐留計劃','赴美國紐約參與 99 Canal 藝術家駐留計劃。'],
+ ['2026.05.14 – 17','個展・紐約','「憂鬱的使役」Independent 藝術博覽會','馬凌畫廊呈現其首次美國個展，以紙本水墨膠彩與水粉畫作聚焦身體與其局部。'],
+ ['2025.09','個人展位・首爾','首爾 Frieze 藝博會個人展位','馬凌畫廊呈現近年紙本設色新作，包括屏風作品《愛情靈藥》、《圓缺》與《夏至》。'],
+ ['2025.03.20 – 05.30','個展・上海','「旁觀他人之幸福」','Longlati 經緯藝術中心個展，展出近年 16 件作品。'],
+ ['2022.12.03 – 30','個展・台北','「木與夜孰長」Skin Depth','亞紀畫廊個展。']
+];
+const VIDEOS = [
+ ['Frieze・2025.08.06','Work in Progress：曾建穎（首爾 Frieze 展前工作室影片）','https://www.frieze.com/video/work-progress-tseng-chien-ying-frieze-seoul-2025'],
+ ['shojo art club・ep19','藝術史的多重宇宙 ft. 藝術家曾建穎','https://www.youtube.com/watch?v=KeLzI-NlTgY'],
+ ['觀弱音・EP30','『水墨肉體』藝術家 曾建穎 大 540p','https://www.youtube.com/watch?v=B6W9doWzal8']
+];
+const READS = [
+ ['Independent','Open for Interpretation：紐約個展專訪','https://www.independenthq.com/features/open-for-interpretation-tseng-chien-ying-at-kiang-malingue'],
+ ['Frieze','Work in Progress：談寒山拾得屏風與工作室日常','https://www.frieze.com/video/work-progress-tseng-chien-ying-frieze-seoul-2025'],
+ ['今藝術&投資 ARTouch','「我雙魚，為什麼天蠍要恨我？」木與夜孰長','https://artouch.com/art-exhibition/content-95371.html'],
+ ['立報傳媒','露水幻夢：斯皮爾斯與曾建穎雙人展','https://www.limedia.tw/fea/74925/']
+];
+const CV = [
+ ['2026','99 Canal 藝術家駐留計劃，紐約'],
+ ['典藏','Space K（首爾）、白兔美術館（雪梨）、臺北市立美術館、國立台灣美術館、池上穀倉藝術館'],
+ ['2020','台灣美術雙年展「禽獸不如」，國立台灣美術館'],
+ ['2020','金曲獎最佳裝幀設計獎入圍；Shopping Design 年度百大設計'],
+ ['2017','亞洲文化協會（ACC）台灣獎助計劃'],
+ ['2015','台北國際藝術博覽會 MIT 新人特區'],
+ ['2012','世安美學獎；台北當代藝術博覽會新潮賞最佳評審獎']
+];
+const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $ = (id) => document.getElementById(id);
+
+$('newsList').innerHTML = NEWS.map(([d,t,h,p]) => `<article><div><span class="date">${d}</span><span class="tag">${t}</span></div><div><h3>${h}</h3><p>${p}</p></div></article>`).join('');
+$('videos').innerHTML = VIDEOS.map(([s,t,u]) => `<a href="${u}" target="_blank" rel="noopener"><span class="src">${s}</span><h3>${t}</h3><span class="go">觀看</span></a>`).join('');
+$('reads').innerHTML = READS.map(([s,t,u]) => `<a href="${u}" target="_blank" rel="noopener"><span class="src">${s}</span><span>${t}</span></a>`).join('');
+$('cv').innerHTML = CV.map(([y,t]) => `<div><b>${y}</b><span>${t}</span></div>`).join('');
+
+const works = window.WORKS.slice().sort((a,b) => a.cat === b.cat ? b.year - a.year : (a.cat === 'painting' ? -1 : 1));
+const years = [...new Set(works.filter(w => w.cat === 'painting').map(w => w.year))].sort((a,b) => b - a);
+const filters = [{id:'all',label:'全部',test:() => true}, ...years.map(y => ({id:String(y),label:String(y),test:w => w.cat === 'painting' && w.year === y})), {id:'ceramic',label:'陶瓷',test:w => w.cat === 'ceramic'}];
+let cur = 'all';
+function render(){
+  const f = filters.find(x => x.id === cur);
+  const list = works.filter(f.test);
+  $('filters').innerHTML = filters.map(x => `<button type="button" class="chip" data-id="${x.id}" aria-pressed="${x.id === cur}">${x.label}</button>`).join('');
+  $('count').textContent = `共 ${list.length} 件`;
+  $('grid').innerHTML = list.map(w => `<figure class="work"><button type="button" data-img="${w.img}" data-cap="${esc(w.title)}，${w.year}，${esc(w.spec)}"><img src="${w.img}" alt="${esc(w.title)}" loading="lazy"></button><div class="row"><h3>${esc(w.title)}</h3><span class="yr">${w.year}</span></div><span class="spec">${esc(w.spec)}</span>${w.price ? `<span class="price">${esc(w.price)}</span>` : ''}</figure>`).join('');
+}
+$('filters').addEventListener('click', e => { const b = e.target.closest('button'); if (b) { cur = b.dataset.id; render(); } });
+const dlg = $('viewer');
+$('grid').addEventListener('click', e => { const b = e.target.closest('button[data-img]'); if (!b) return; dlg.querySelector('img').src = b.dataset.img; dlg.querySelector('img').alt = b.dataset.cap; dlg.querySelector('p').textContent = b.dataset.cap; dlg.showModal(); });
+dlg.addEventListener('click', e => { if (e.target === dlg || e.target.classList.contains('close')) dlg.close(); });
+render();
+</script>
+</body>
+</html>
